@@ -1,0 +1,6 @@
+row=int(input('Enter the row:'))
+column=int(input('Enter the column:'))
+def dominosPilling(row,column):
+    numberOfDominos=(row*column)/2
+    print(int(numberOfDominos))
+dominosPilling(row,column)
