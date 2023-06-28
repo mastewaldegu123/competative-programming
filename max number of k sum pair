@@ -1,0 +1,8 @@
+class Solution:
+    def maxOperations(self, nums: List[int], k: int) -> int:
+        count, value = Counter(nums), 0
+        result=0
+        for i in count:
+            value += min(count[i], count[k - i])
+            result=value//2
+        return result
